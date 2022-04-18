@@ -158,10 +158,4 @@ function Footer() {
 	);
 }
 
-document
-	.querySelector("footer_upper_card")
-	.addEventListener("mouseover", () => {
-		document.querySelector("footer_upper_card").style.backgroundColor = "green";
-	});
-
 export default Footer;
