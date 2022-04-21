@@ -8,6 +8,8 @@ import {
 	CardText,
 } from "reactstrap";
 import "../../App.css";
+import "bootstrap/dist/css/bootstrap.css";
+import { hover } from "@testing-library/user-event/dist/hover";
 
 function Footer() {
 	return (
@@ -15,19 +17,29 @@ function Footer() {
 			<Container>
 				<Row>
 					<Col lg={{ size: 4 }}>
-						<h2>Services</h2>
-						<p>
-							There are many variations of passages pf Lorem Ipsum available,
-							but the majority have suffered alteration.
-						</p>
-						<span class='footer_text'>Request Custom Service</span>
+						<Row>
+							<Col className='section_footer_services'>
+								<h2>Services</h2>
+								<p>
+									There are many variations of passages pf Lorem Ipsum
+									available, but the majority have suffered alteration.
+								</p>
+							</Col>
+						</Row>
+						<Row>
+							<Col>
+								<span className='footer_text'>
+									<p style={{ color: "white" }}>Request Custom Service</p>
+								</span>
+							</Col>
+						</Row>
 					</Col>
 					<Col lg={{ size: 8 }}>
 						<Container>
 							<Row>
 								<Col lg={{ size: 6 }} md={{ size: 6 }} sm={{ size: 6 }}>
 									<div className='footer_upper_card'>
-										<Card>
+										<Card style={{ borderColor: "#101010" }}>
 											<CardBody>
 												<div className='icon'>
 													<svg
@@ -55,7 +67,7 @@ function Footer() {
 								</Col>
 								<Col lg={{ size: 6 }} md={{ size: 6 }} sm={{ size: 6 }}>
 									<div className='footer_upper_card'>
-										<Card>
+										<Card style={{ borderColor: "#101010" }}>
 											<CardBody>
 												<div className='icon'>
 													<svg
@@ -86,7 +98,7 @@ function Footer() {
 							<Row>
 								<Col lg={{ size: 6 }} md={{ size: 6 }} sm={{ size: 6 }}>
 									<div className='footer_bottom_card'>
-										<Card>
+										<Card style={{ borderColor: "#101010" }}>
 											<CardBody>
 												<div className='icon'>
 													<svg
@@ -116,7 +128,7 @@ function Footer() {
 								</Col>
 								<Col lg={{ size: 6 }} md={{ size: 6 }} sm={{ size: 6 }}>
 									<div className='footer_bottom_card'>
-										<Card style={{ color: "green" }}>
+										<Card style={{ borderColor: "#101010" }}>
 											<CardBody>
 												<div className='icon'>
 													<svg
